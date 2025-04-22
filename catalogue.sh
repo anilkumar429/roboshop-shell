@@ -3,8 +3,9 @@ dnf module enable nodejs:20 -y
 dnf install nodejs -y
 
 cp catalogue.service /etc/systemd/system/catalogue.service
-cp mongo.repo /etc/yum.repo.d/mongo.repo
+cp mongo.repo /etc/yum.repos.d/mongo.repo
 
+rm -rf /app
 useradd roboshop
 mkdir /app
 curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip
