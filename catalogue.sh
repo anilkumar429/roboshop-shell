@@ -8,9 +8,10 @@ source common.sh
 #dnf install nodejs -y
 
 #cp catalogue.service /etc/systemd/system/catalogue.service
-cp mongo.repo /etc/yum.repos.d/mongo.repo
+
 
 nodejs
+cp mongo.repo /etc/yum.repos.d/mongo.repo
 
 #rm -rf /app  ----nodejs function
 #useradd roboshop
