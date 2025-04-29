@@ -1,4 +1,4 @@
-component_name=catalouge
+component_name=catalogue
 source common.sh
 
 
