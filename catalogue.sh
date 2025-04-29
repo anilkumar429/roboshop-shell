@@ -11,7 +11,7 @@ source common.sh
 
 
 nodejs
-cp mongo.repo /etc/yum.repos.d/mongo.repo
+cp ${pwd}/mongo.repo /etc/yum.repos.d/mongo.repo
 
 #rm -rf /app  ----nodejs function
 #useradd roboshop
